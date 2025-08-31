@@ -1,16 +1,36 @@
-body{font-family:Tajawal,sans-serif;direction:rtl;margin:0;padding:0;background:#eef5fb;color:#0b274e}
-.wrap{max-width:1000px;margin:auto;padding:20px}
-.hero,.card{background:#fff;border-radius:12px;padding:20px;margin-bottom:20px;box-shadow:0 4px 12px rgba(0,0,0,.1)}
-.title{font-size:28px;color:#1554b8;margin:0 0 10px}
-.subtitle{color:#0f3e86;margin:0 0 20px;font-weight:700}
-.btn{display:inline-block;background:#1554b8;color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;margin:5px 0}
-.chip{padding:8px 12px;border:2px solid #ff6a00;border-radius:20px;font-weight:bold;background:#fff8f2}
-.features{display:grid;gap:10px;margin:20px 0}
-.pill{background:#fff;padding:12px;border-radius:20px;border:2px solid #dfebfb;text-align:center;font-weight:bold}
-.teacher{font-weight:bold;color:#1554b8}
-.seats{color:#1554b8;font-weight:bold;margin:10px 0}
-.grades{color:#6d7b90}
-.phone{display:block;text-align:center;padding:15px;font-size:20px;background:#0b5bd3;color:#fff;border-radius:10px;text-decoration:none}
-.icon-btn{background:#25d366;color:#fff;border:none;padding:10px 20px;border-radius:50%;margin:5px;cursor:pointer}
-.icon-btn.instagram{background:linear-gradient(45deg,#feda75,#d62976,#962fbf,#4f5bd5);}
-footer{text-align:center;margin-top:20px;color:#6e86a6}
+:root{
+  --brand:#1554b8; --brand-2:#0f3e86; --accent:#ff6a00;
+  --ink:#0b274e; --muted:#6d7b90; --bg:#eef5fb; --card:#ffffff;
+  --radius:18px; --shadow:0 8px 24px rgba(16, 51, 98, .12);
+}
+*{box-sizing:border-box}
+body{margin:0;direction:rtl;background:linear-gradient(180deg,#f6fbff,#e9f2fb);color:var(--ink);font-family:"Tajawal",system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:1100px;margin:auto;padding:24px}
+.hero,.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow)}
+.hero{position:relative;padding:clamp(24px,5vw,48px);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:120%;height:140%;
+  background-image:repeating-linear-gradient(30deg, rgba(21,84,184,.06) 0 26px, transparent 26px 52px),
+                   repeating-linear-gradient(-30deg, rgba(21,84,184,.06) 0 26px, transparent 26px 52px);
+  opacity:.6}
+.title{font-family:"Noto Kufi Arabic",sans-serif;font-weight:800;font-size:clamp(36px,5.6vw,70px);color:var(--brand);margin:0 0 8px}
+.subtitle{font-family:"Noto Kufi Arabic",sans-serif;font-weight:700;color:var(--brand-2);margin:0 0 24px;font-size:clamp(16px,2.4vw,24px)}
+.cta-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.btn{background:var(--brand);color:#fff;text-decoration:none;border:0;border-radius:14px;padding:12px 18px;font-weight:700;display:inline-flex;gap:8px;align-items:center;box-shadow:var(--shadow)}
+.chip{border:2px solid var(--accent);color:var(--brand-2);padding:8px 14px;border-radius:999px;background:#fff8f2;font-weight:700}
+.features{display:grid;grid-template-columns:1fr;gap:14px;margin-block:24px}
+.pill{background:var(--card);padding:14px 18px;border-radius:999px;border:3px solid #dfebfb;box-shadow:var(--shadow);font-weight:700;text-align:center}
+@media(min-width:700px){.features{grid-template-columns:repeat(3,1fr)}}
+.grid{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:860px){.grid{grid-template-columns:1.5fr .9fr}}
+.card{padding:20px}
+.teacher{font-weight:800;font-size:26px;margin:0 0 8px;font-family:"Noto Kufi Arabic"}
+.seats{background:linear-gradient(180deg,#f6fbff,#e7f0fb);border-radius:14px;padding:12px 16px;font-weight:800;color:var(--brand);margin:10px 0}
+.grades{color:var(--muted);font-weight:600}
+.contact .row{display:flex;flex-direction:column;gap:12px}
+.handle,.addr,.phone{background:var(--brand);color:#fff;border-radius:14px;padding:14px 18px;display:flex;align-items:center;gap:12px;font-weight:700}
+.addr{background:#113a7b}
+.phone{background:#0b5bd3;font-size:24px;justify-content:center}
+.socials{display:flex;gap:12px;margin-top:10px;align-items:center;flex-wrap:wrap}
+.icon-btn{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#25d366;border:0;cursor:pointer;box-shadow:var(--shadow);color:#fff;font-weight:800}
+.icon-btn.instagram{background: radial-gradient(120% 120% at 30% 30%, #feda75 0, #d62976 40%, #962fbf 70%, #4f5bd5 100%)}
+footer{text-align:center;margin:28px auto 8px;color:#6e86a6;font-weight:600}
