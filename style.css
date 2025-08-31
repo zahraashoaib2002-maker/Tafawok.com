@@ -1,0 +1,16 @@
+body{font-family:Tajawal,sans-serif;direction:rtl;margin:0;padding:0;background:#eef5fb;color:#0b274e}
+.wrap{max-width:1000px;margin:auto;padding:20px}
+.hero,.card{background:#fff;border-radius:12px;padding:20px;margin-bottom:20px;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.title{font-size:28px;color:#1554b8;margin:0 0 10px}
+.subtitle{color:#0f3e86;margin:0 0 20px;font-weight:700}
+.btn{display:inline-block;background:#1554b8;color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;margin:5px 0}
+.chip{padding:8px 12px;border:2px solid #ff6a00;border-radius:20px;font-weight:bold;background:#fff8f2}
+.features{display:grid;gap:10px;margin:20px 0}
+.pill{background:#fff;padding:12px;border-radius:20px;border:2px solid #dfebfb;text-align:center;font-weight:bold}
+.teacher{font-weight:bold;color:#1554b8}
+.seats{color:#1554b8;font-weight:bold;margin:10px 0}
+.grades{color:#6d7b90}
+.phone{display:block;text-align:center;padding:15px;font-size:20px;background:#0b5bd3;color:#fff;border-radius:10px;text-decoration:none}
+.icon-btn{background:#25d366;color:#fff;border:none;padding:10px 20px;border-radius:50%;margin:5px;cursor:pointer}
+.icon-btn.instagram{background:linear-gradient(45deg,#feda75,#d62976,#962fbf,#4f5bd5);}
+footer{text-align:center;margin-top:20px;color:#6e86a6}
